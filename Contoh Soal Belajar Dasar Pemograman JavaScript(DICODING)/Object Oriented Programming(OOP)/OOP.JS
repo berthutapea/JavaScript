@@ -69,3 +69,5 @@ const myEagle = new Eagle("Elo", 4);
 module.exports = {
   Animal, Rabbit, Eagle, myRabbit, myEagle,
 };
+
+// Gilbert Hutapea
