@@ -1,0 +1,42 @@
+<!-- <button onclick="alert('Halo! Apa Kabar')">Tekan Aku</button> -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Event World</title>
+
+    <style>
+        .contents {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border: 2px solid black;
+            padding: 15px;
+        }
+
+        #generateButton {
+            margin-top: 5px;
+            margin-bottom: 15px;
+            ;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contents" align="center" hidden>
+        <button id="incrementButton">Tekan Aku :)</button>
+        <h3>Kamu sudah menekan tombol di atas sebanyak <span id="count">0</span></h3>
+    </div>
+
+    <script>
+        function welcome() {
+            alert('Sim salabim muncullah elemen-elemen HTML!');
+            const contents = document.querySelector('.contents');
+            contents.removeAttribute('hidden');
+        }
+        document.body.onload = welcome;
+    </script>
+</body>
+
+</html>
