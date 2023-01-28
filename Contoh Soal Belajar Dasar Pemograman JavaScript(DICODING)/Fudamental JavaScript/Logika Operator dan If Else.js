@@ -46,5 +46,3 @@ function scoreChecker(score) {
     }
     return result;
 }
-
-console.log()
