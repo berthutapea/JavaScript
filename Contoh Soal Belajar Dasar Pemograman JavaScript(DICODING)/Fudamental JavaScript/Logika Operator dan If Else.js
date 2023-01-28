@@ -46,4 +46,3 @@ function scoreChecker(score) {
     }
     return result;
 }
-HTMLFormControlsCollection
