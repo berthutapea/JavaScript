@@ -26,3 +26,4 @@ console.log(typeof (isMarried));
 module.exports = {
     firstName, lastName, age, isMarried,
 };
+console.log()
