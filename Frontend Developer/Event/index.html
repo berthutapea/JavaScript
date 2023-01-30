@@ -1,10 +1,8 @@
-<!-- <button onclick="alert('Halo! Apa Kabar')">Tekan Aku</button> -->
 <!DOCTYPE html>
 <html>
 
 <head>
     <title>Event World</title>
-
     <style>
         .contents {
             position: fixed;
@@ -36,8 +34,10 @@
             if (document.getElementById('count').innerText == 7) {
                 const hiddenMessage = document.createElement('h4');
                 hiddenMessage.innerText = 'Selamat! Anda menemukan hadiah tersembunyi...';
+
                 const image = document.createElement('img');
                 image.setAttribute('src', 'https://i.ibb.co/0V49VRZ/catto.jpg');
+
                 const contents = document.querySelector('.contents');
                 contents.appendChild(hiddenMessage).appendChild(image);
             }
@@ -49,9 +49,9 @@
             contents.removeAttribute('hidden');
         }
 
-        document.getElementById('incrementButton').onclick = increment;
-        document.body.onload = welcome;
-
+        // kita akan menulis kode menggunakan addEventListener di sini
+        window.addEventListener('load', welcome);
+        document.getElementById('incrementButton').addEventListener('click', increment);
     </script>
 </body>
 
