@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 
 <head>
   <title>Event World</title>
@@ -31,8 +31,11 @@
 
     window.addEventListener('load', function () {
       const tombol = document.getElementById('tombol');
+
       tombol.addEventListener('changeCaption', customEventHandler);
-      tombol.addEventListener('click', function () { });
+      tombol.addEventListener('click', function () {
+        tombol.dispatchEvent(changeCaption);
+      });
     });
 
     function customEventHandler(ev) {
