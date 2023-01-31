@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Form World</title>
+    <style>
+        .contents {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border: 2px solid black;
+            padding: 15px;
+        }
+
+        .form-element {
+            margin: 8px;
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contents">
+        <h2 align="center">Isi data diri</h2>
+        <div class="formContent">
+            <form id="formDataDiri">
+                <div class="form-element">
+                    <label for="inputNama">Nama:</label><br>
+                    <input type="text" id="inputNama" name="nama" placeholder="Nama Anda" required><br>
+                </div>
+                <div class="form-element">
+                    <label for="inputDomisili">Domisili:</label><br>
+                    <input type="text" id="inputDomisili" name="domisili" placeholder="Domisili Anda" required><br>
+                </div>
+                <div class="form-element">
+                    <input type="submit" value="Submit Data">
+                </div>
+            </form>
+        </div>
+        <h3 id="messageAfterSubmit"></h3>
+    </div>
+
+    <script>
+        const submitAction = document.getElementById('formDataDiri');
+
+        submitAction.addEventListener('submit', function (event) {
+            const inputNama = document.getElementById('inputNama').value;
+            const inputDomisili = document.getElementById('inputDomisili').value;
+            const hiddenMessage = 'Halo ' + inputNama + ', bagaimana cuacanya di ' + inputDomisili + '?';
+
+            document.getElementById('messageAfterSubmit').innerText = hiddenMessage;
+            event.preventDefault();
+        });
+    </script>
+</body>
+
+</html>
