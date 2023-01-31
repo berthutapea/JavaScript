@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Capturing World</title>
+    <style>
+        body * {
+            margin: 8px;
+            padding: 5px;
+            border: 2px solid black;
+            width: 60%;
+        }
+    </style>
+</head>
+
+<body>
+    <div align="center" id="langit">
+        LANGIT
+        <div align="center" id="luar">
+            LUAR
+            <div align="center" id="tengah">
+                TENGAH
+                <div align="center" id="dalam">
+                    DALAM
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const divs = document.getElementsByTagName('div');
+        for (let el of divs) {
+            el.addEventListener('click', function () {
+                alert('ELEMEN ' + el.getAttribute('id').toUpperCase());
+            }, true);
+        }
+    </script>
+</body>
+
+</html>
