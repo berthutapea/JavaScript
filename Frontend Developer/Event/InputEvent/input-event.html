@@ -4,14 +4,7 @@
 <head>
     <title>Form World</title>
     <style>
-        .contents {
-            border: 2px solid black;
-            padding: 8px;
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
+
 
         .form-element {
             margin: 8px;
@@ -55,7 +48,10 @@
         </div>
     </div>
     <script>
-
+        document.addEventListener('DOMContentLoaded', function () {
+            const inputMaxLengthOnLoad = document.getElementById('inputNama').maxLength;
+            document.getElementById('sisaKarakter').innerText = inputMaxLengthOnLoad;
+        });
     </script>
 </body>
 
