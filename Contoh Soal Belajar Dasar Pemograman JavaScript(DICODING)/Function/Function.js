@@ -22,15 +22,15 @@
 
 
 // TODO
-const minimal = (a, b) => {
-    if (a < b) {
-        return a;
-    } else if (a == b) {
-        return a;
-    } else {
-        return b;
-    }
-};
+// const minimal = (a, b) => {
+//     if (a < b) {
+//         return a;
+//     } else if (a == b) {
+//         return a;
+//     } else {
+//         return b;
+//     }
+// };
 
 
 //2
